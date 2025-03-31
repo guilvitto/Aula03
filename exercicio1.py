@@ -1,0 +1,8 @@
+nome= input("Digite seu nome: ")
+idade= int(input("Digite sua idade: "))
+salario= float(input("Digite o seu salário aqui: "))
+taxa_aumento= float(input("Digite em percentual o aumento do salário. Ex: 15: "))
+salario_final= salario+(salario*taxa_aumento/100)
+print(nome,idade)
+print(f"Seu salário inicial: {salario:.2f}")
+print(f"Seu salário final:{salario_final:.2f}")
