@@ -8,8 +8,10 @@ total_hora=h1+h2
 if total_min>=60:
     total_hora+=1
     total_min-=60
-if total_hora>=24:
+if total_hora>=24 and total_hora<=36:
     total_hora-=24
+elif total_hora>=36:
+    total_hora-=36
 else:
     total_hora-=12
 print(total_hora,total_min)
